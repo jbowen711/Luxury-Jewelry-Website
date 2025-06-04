@@ -151,7 +151,7 @@ hr {
 
 .filter-gallery label {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: rgb(51, 51, 51);
     color: white;
     border-radius: 5px;
@@ -173,6 +173,7 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: none;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -184,6 +185,7 @@ hr {
     list-style: none;
     padding: 0;
     margin: 0;
+    min-width: none;
 }
 
 .gallery {
@@ -229,12 +231,27 @@ hr {
   color: #ccc;
 }
 
-.contact-form{
+
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-width: 600px;
     width: 100%;
+    max-width: 600px;
+}
+
+.contact-form input, textarea, button{
+    padding: 10px;
+    border: 1px solid rgb(146, 125, 56);
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-form button :hover{
+    color: rgb(197, 197, 197);
 }
 
 .contact {
