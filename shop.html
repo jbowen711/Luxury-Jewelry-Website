@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is a comment that will not be displayed in the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <meta name="description" content="Shop for Mangata & Gallo.">
+    <meta name="author" content="Jonathan Bowen">
+
+    <!-- Import Logos-->
+    <link rel="icon" href="/assets/largelWhite.png">
+    <link rel="icon" href="/assets/smallLWhite.png">
+
+    <!-- Import Stylesheet -->
+    <link rel="stylesheet" href="homeStyles.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Site Header -->
+         <div class="header-container">
+            <img src="assets/smallLWhite.png" alt="Mangata & Gallo Logo" class="logo">
+        </div>
+    </header>
+    <nav class="nav-container">
+        <!-- Site Navigation -->
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Main Content-->
+         <section class="section-container">
+            <article class="welcome-text">
+                <h2>Shop Our Collection</h2><hr>
+                <p>Explore our exquisite range of jewelry from necklaces to rings and earrings, perfect for every occasion.
+                    We have something for everyone including steeling silver, gold, and diamond pieces. </p>
+            
+            </article>
+         </section>
+        <!-- Filter Gallery -->
+    
+        <div class="filter-container">
+            <form class ="filter-gallery">
+                <input type="radio" name="filter" value="all" id="all" checked>
+                <label for="all">All</label>
+                <input type="radio" name="filter" value="necklaces" id="necklaces">
+                <label for="necklaces">Necklaces</label>
+                <input type="radio" name="filter" value="rings" id="rings"> 
+                <label for="rings">Rings</label>
+                <input type="radio" name="filter" value="earrings" id="earrings">
+                <label for="earrings">Earrings</label>
+                <input type="radio" name="filter" value="bracelets" id="bracelets">
+                <label for="bracelets">Bracelets</label>
+            </form>
+        </div>
+         <section class = "gallery">
+            <!-- Neclace Items -->
+            <div class ="gallery-item" data-category="necklaces">
+                <img src="assets/products/whitePearlNecklace.jpg" alt="Necklace" class="gallery-image">
+                <h3>Elegant White Pearl</h3>
+                <p><strong>Price</strong> <i>$399</i></p>
+            </div>
+            <div class ="gallery-item" data-category="necklaces">
+                <img src="assets/products/redPearlNecklace.jpg" alt="Necklace" class="gallery-image">
+                <h3>Beautiful Red Pearl</h3>
+                <p><strong>Price</strong> <i>$249</i></p>
+            </div>
+            <div class ="gallery-item" data-category="necklaces">
+                <img src="assets/products/freshWaterPearl.jpg" alt="Necklace" class="gallery-image">
+                <h3>Stunning Fresh Water Pearl</h3>
+                <p><strong>Price</strong> <i>$445</i></p>
+            </div>
+            <div class ="gallery-item" data-category="necklaces">
+                <img src="assets/products/pendantNecklace.jpg" alt="Necklace" class="gallery-image">
+                <h3>Charming Purple Pendant</h3>
+                <p><strong>Price</strong> <i>$299</i></p>
+            </div>
+            <div class ="gallery-item" data-category="necklaces">
+                <img src="assets/products/chainNecklace.jpg" alt="Necklace" class="gallery-image">
+                <h3>Extravagant</h3>
+                <p><strong>Price</strong> <i>$599</i></p>
+            </div>
+            <!-- Bracelet Items -->
+            <div class ="gallery-item" data-category="bracelets">
+                <img src="assets/products/goldBracelet.jpg" alt="Bracelet" class="gallery-image">
+                <h3>Golden Wonder</h3>
+                <p><strong>Price</strong> <i>$199</i></p>
+            </div>
+            <div class ="gallery-item" data-category="bracelets">
+                <img src="assets/products/diamondBracelet.jpg" alt="Bracelet" class="gallery-image">
+                <h3>Silver Wonder</h3>
+                <p><strong>Price</strong> <i>$199</i></p>
+            </div>
+            <div class ="gallery-item" data-category="bracelets">
+                <img src="assets/products/pearlBracelet.jpg" alt="Bracelet" class="gallery-image">
+                <h3>Elegant Pearl</h3>
+                <p><strong>Price</strong> <i>$199</i></p>
+            </div>
+            <div class ="gallery-item" data-category="bracelets">
+                <img src="assets/products/pearlSteelBracelet.jpg" alt="Bracelet" class="gallery-image">
+                <h3>Pearl Steel</h3>
+                <p><strong>Price</strong> <i>$199</i></p>
+            </div>
+            <!-- Ring Items -->
+            <div class ="gallery-item" data-category="rings">
+                <img src="assets/products/diamondRing.jpg" alt="Ring" class="gallery-image">
+                <h3>Elegant Diamond</h3>
+                <p><strong>Price</strong> <i>$1399</i></p>
+            </div>
+            <div class ="gallery-item" data-category="rings">
+                <img src="assets/products/diamondRing2.jpg" alt="Ring" class="gallery-image">
+                <h3>Stunning Diamond</h3>
+                <p><strong>Price</strong> <i>$1699</i></p>
+            </div>
+            <div class ="gallery-item" data-category="rings">
+                <img src="assets/products/diamondRing4.jpg" alt="Ring" class="gallery-image">
+                <h3>Extravagant Diamond</h3>
+                <p><strong>Price</strong> <i>$1999</i></p>
+            </div>
+            <div class ="gallery-item" data-category="earrings">
+                <img src="assets/products/ear1.jpg" alt="Earring" class="gallery-image">
+                <h3>Gold Pearl</h3>
+                <p><strong>Price</strong> <i>$199</i></p>
+            </div>
+            <div class ="gallery-item" data-category="earrings">
+                <img src="assets/products/ear2.jpg" alt="Earring" class="gallery-image">
+                <h3>Elegant Pearl</h3>
+                <p><strong>Price</strong> <i>$249</i></p>
+            </div>
+            <div class ="gallery-item" data-category="earrings">
+                <img src="assets/products/ear3.jpg" alt="Earring" class="gallery-image">
+                <h3>Extravagant Pearl</h3>
+                <p><strong>Price</strong> <i>$299</i></p>
+            </div>
+         </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <img src="assets/largeLWhite.png" alt="Mangata & Gallo Logo" class="footer-logo">
+            <p class="footer-text">&copy; 2025 Mangata & Gallo</p>
+        </div>
+    </footer>
+
+    <script>
+        //filter functionality
+        const filterGallery = document.querySelector('.filter-gallery');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        filterGallery.addEventListener('change', (event) => {
+            const filterValue = event.target.value;
+            galleryItems.forEach(item => {
+                if (filterValue === 'all' || item.dataset.category === filterValue) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
