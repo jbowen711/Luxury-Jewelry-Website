@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is a comment that will not be displayed in the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <meta name="description" content="Frequently Asked Questions for Mangata & Gallo.">
+    <meta name="author" content="Jonathan Bowen">
+
+    <!-- Import Logos-->
+    <link rel="icon" href="/assets/largelWhite.png">
+    <link rel="icon" href="/assets/smallLWhite.png">
+
+    <!-- Import Stylesheet -->
+    <link rel="stylesheet" href="homeStyles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Site Header -->
+         <div class="header-container">
+            <img src="assets/smallLWhite.png" alt="Mangata & Gallo Logo" class="logo">
+        </div>
+    </header>
+    <nav class="nav-container">
+        <!-- Site Navigation -->
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Main Content-->
+        <section class="section-container">
+            <article class="welcome-text">
+                <h2>Frequently Asked Questions</h2><hr>
+                <select id="faq-select" onchange="showAnswer()">
+                    <option value="">Select a question</option>
+                    <option value="shipping">What are your shipping options?</option>
+                    <option value="returns">What is your return policy?</option>
+                    <option value="custom">Do you offer custom jewelry?</option>
+                    <option value="warranty">Is there a warranty on your products?</option>
+                </select>
+            </article>
+            <div class="faq-container">
+                <!-- Answers will be displayed here -->
+            </div>
+            <!-- Contact form -->
+            <article class="welcome-text">
+                <h2>Ask a question</h2> <hr>
+                <p>Ask us any questions below! We respond within 24 hours.</p>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="question">Your Question:</label>
+                    <textarea id="question" name="question" rows="5" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <img src="assets/largeLWhite.png" alt="Mangata & Gallo Logo" class="footer-logo">
+            <p class="footer-text">&copy; 2025 Mangata & Gallo</p>
+        </div>
+    </footer>
+
+    <script>
+        function showAnswer() {
+            const select = document.getElementById('faq-select');
+            const existing = document.querySelector('.faq-answer');
+            const container = document.querySelector('.faq-container');
+            if (existing) {
+                existing.remove();
+            }
+
+            const answer = document.createElement('p');
+            answer.className = 'faq-answer';
+            switch (select.value) {
+                case 'shipping':
+                    answer.textContent = 'We offer two shipping options: standard shipping (5-7 business days) and expedited shipping (2-3 business days).';
+                    break;
+                case 'returns':
+                    answer.textContent = 'You can return any item in good condition within 30 days of the purchase date for a full refund. Please ensure the item is in its original packaging. Please contact us for more return details.';
+                    break;
+                case 'custom':
+                    answer.textContent = 'We do not currently offer custom jewelry, but we are always looking to expand our offerings. Please check back later or contact us for more information.';
+                    break;
+                case 'warranty':
+                    answer.textContent = 'All of our products come with a 2 year warranty against natural wear and tear. This warranty does not cover damage caused by misuse or accidents. If you have any issues with your product, please contact us for assistance.';
+                    break;
+                default:
+                    answer.textContent = '';
+
+            }
+            container.appendChild(answer);
+        }
+    </script>
+        
+</body>
+
